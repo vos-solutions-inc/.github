@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="782" viewBox="0 0 1200 782" role="img" aria-labelledby="title desc">
+  <title id="title">Tryouts</title>
+  <desc id="desc">Automate club tryouts from sign-up to selection. One campaign, one signup link.</desc>
+  <defs>
+  <filter id="shadow" x="-12%" y="-16%" width="124%" height="148%">
+    <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#111111" flood-opacity="0.08"/>
+  </filter>
+  <filter id="menuShadow" x="-20%" y="-20%" width="150%" height="160%">
+    <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#111111" flood-opacity="0.08"/>
+  </filter>
+  <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#ffffff" stop-opacity=".45"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="hatch" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="20" height="20" fill="#f7f7f7"/>
+    <rect x="10" width="10" height="20" fill="#efefef"/>
+  </pattern>
+</defs>
+  <style>
+    text { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .rise { animation: rise .7s cubic-bezier(.22,1,.36,1) both; transform-box: fill-box; }
+    .d1 { animation-delay: .08s; } .d2 { animation-delay: .18s; }
+    .d3 { animation-delay: .3s; } .d4 { animation-delay: .42s; }
+    .d5 { animation-delay: .54s; } .d6 { animation-delay: .66s; }
+    .d7 { animation-delay: .78s; } .d8 { animation-delay: .9s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: none; }
+    }
+    .pill {
+      transform-box: fill-box; transform-origin: left center;
+      animation: pill 16s cubic-bezier(.22,1,.36,1) infinite;
+    }
+    @keyframes pill {
+      0%, 16% { transform: translateX(0); }
+      24%, 40% { transform: translateX(108px); }
+      48%, 62% { transform: translateX(214px); }
+      70%, 84% { transform: translateX(308px); }
+      92%, 100% { transform: translateX(0); }
+    }
+    .menu {
+      opacity: 0; transform: translateY(-6px);
+      transform-box: fill-box; transform-origin: top center;
+      animation: menu 16s cubic-bezier(.22,1,.36,1) infinite;
+    }
+    @keyframes menu {
+      0%, 6% { opacity: 0; transform: translateY(-6px); }
+      10%, 28% { opacity: 1; transform: none; }
+      34%, 100% { opacity: 0; transform: translateY(-6px); }
+    }
+    .chev {
+      transform-box: fill-box; transform-origin: center;
+      animation: chev 16s cubic-bezier(.22,1,.36,1) infinite;
+    }
+    @keyframes chev {
+      0%, 6% { transform: rotate(0deg); }
+      10%, 28% { transform: rotate(180deg); }
+      34%, 100% { transform: rotate(0deg); }
+    }
+    .glint { animation: sweep 6.8s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes sweep {
+      0%, 58% { transform: translateX(0); }
+      100% { transform: translateX(460px); }
+    }
+    .home { animation: home 14s ease-in-out infinite; }
+    .sched { opacity: 0; animation: sched 14s ease-in-out infinite; }
+    @keyframes home {
+      0%, 38% { opacity: 1; }
+      48%, 88% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes sched {
+      0%, 38% { opacity: 0; }
+      48%, 88% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .lane { animation: slide .65s cubic-bezier(.22,1,.36,1) both; transform-box: fill-box; }
+    @keyframes slide {
+      from { opacity: 0; transform: translateX(-12px); }
+      to { opacity: 1; transform: none; }
+    }
+    .clash { animation: pulse 2.2s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+    .live { animation: blink 1.5s ease-in-out infinite; }
+    @keyframes blink { 50% { opacity: .25; } }
+    .check {
+      fill: none; stroke: #171717; stroke-width: 1.8;
+      stroke-linecap: round; stroke-linejoin: round;
+      stroke-dasharray: 20; stroke-dashoffset: 20;
+      animation: draw 5.2s cubic-bezier(.22,1,.36,1) infinite;
+    }
+    @keyframes draw {
+      0% { stroke-dashoffset: 20; }
+      14%, 76% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 20; }
+    }
+    .float { animation: float 6.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center top; }
+    .float2 { animation-delay: -2.4s; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .tick { opacity: 0; animation: tick 6.4s cubic-bezier(.22,1,.36,1) infinite; transform-box: fill-box; }
+    .t1 { animation-delay: 1.6s; } .t2 { animation-delay: 3.2s; } .t3 { animation-delay: 4.8s; }
+    @keyframes tick {
+      0% { opacity: 0; transform: translateY(6px); }
+      3%, 24% { opacity: 1; transform: none; }
+      28%, 100% { opacity: 0; transform: translateY(-6px); }
+    }
+    .dest { opacity: 0; animation: dest 9s cubic-bezier(.22,1,.36,1) infinite both; transform-box: fill-box; }
+    .s2 { animation-delay: 3s; } .s3 { animation-delay: 6s; }
+    @keyframes dest {
+      0% { opacity: 0; transform: translateY(10px); }
+      6%, 28% { opacity: 1; transform: none; }
+      34%, 100% { opacity: 0; transform: translateY(-10px); }
+    }
+    .hi { animation: hi 7.2s cubic-bezier(.22,1,.36,1) infinite; }
+    .h2 { animation-delay: 2.4s; } .h3 { animation-delay: 4.8s; }
+    @keyframes hi {
+      0%, 8% { opacity: 0; }
+      14%, 30% { opacity: 1; }
+      38%, 100% { opacity: 0; }
+    }
+    .rule {
+      stroke-dasharray: 1000; stroke-dashoffset: 1000;
+      animation: rule 3.4s cubic-bezier(.22,1,.36,1) infinite;
+    }
+    @keyframes rule {
+      0% { stroke-dashoffset: 1000; opacity: 0; }
+      18% { opacity: 1; }
+      62%, 100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rise, .pill, .menu, .chev, .glint, .home, .sched, .lane, .clash, .live,
+      .check, .float, .tick, .dest, .hi, .rule { animation: none; }
+      .menu, .sched, .tick, .dest { opacity: 0; }
+      .dest.show, .tick.show { opacity: 1; }
+      .check { stroke-dashoffset: 0; }
+      .rise, .lane { opacity: 1; transform: none; }
+    }
+</style>
+  <rect width="1200" height="782" fill="#ffffff"/>
+  
+  
+  <rect x="519.0" y="36" width="162" height="42" rx="21" fill="#f3f3f3"/>
+  <text x="600" y="63" text-anchor="middle" fill="#404040" font-size="18" font-weight="650">Tryouts</text>
+
+  <text class="rise" x="600" y="148" text-anchor="middle" fill="#171717" font-size="40" font-weight="700" letter-spacing="-1.1">Automate club tryouts from sign-up to selection</text>
+  <rect x="40" y="180" width="1120" height="430" rx="16" fill="#ffffff" stroke="#e5e5e5"/>
+  <line x1="600" y1="180" x2="600" y2="610" stroke="#ececec"/>
+  <text x="72" y="230" fill="#171717" font-size="22" font-weight="650">Share one signup link</text>
+  <text x="72" y="262" fill="#737373" font-size="16">Athletes and parents register for gym sessions from a public page.</text>
+  <text x="72" y="286" fill="#737373" font-size="16">No spreadsheet hand-offs.</text>
+  <text x="632" y="230" fill="#171717" font-size="22" font-weight="650">Review, select, and roster</text>
+  <text x="632" y="262" fill="#737373" font-size="16">See every applicant in one list. Mark selected, waitlisted,</text>
+  <text x="632" y="286" fill="#737373" font-size="16">or not selected, then move them onto a team.</text>
+  <rect x="72" y="320" width="496" height="258" rx="12" fill="#f8fafc" stroke="#ececec"/>
+  
+      <g class="rise" style="animation-delay:0.15s">
+        <rect x="96" y="360" width="448" height="42" rx="8" fill="#ffffff" stroke="#ececec"/>
+        <text x="112" y="387" fill="#404040" font-size="15">Athlete name</text>
+      </g>
+      <g class="rise" style="animation-delay:0.25s">
+        <rect x="96" y="412" width="448" height="42" rx="8" fill="#ffffff" stroke="#ececec"/>
+        <text x="112" y="439" fill="#404040" font-size="15">Parent email</text>
+      </g>
+  <g class="rise d4">
+    <rect x="96" y="464" width="448" height="42" rx="8" fill="#eef5fb" stroke="#c7d7e8"/>
+    <text class="dest show" x="112" y="491" fill="#171717" font-size="15" font-weight="600">Saturday 6:00 gym</text><text class="dest s2" x="112" y="491" fill="#171717" font-size="15" font-weight="600">Sunday 9:00 gym</text><text class="dest s3" x="112" y="491" fill="#171717" font-size="15" font-weight="600">Tuesday 5:30 gym</text>
+  </g>
+  <g class="rise d5">
+    <rect x="96" y="520" width="448" height="42" rx="8" fill="#ffffff" stroke="#a3a3a3"/>
+    <text x="320" y="547" text-anchor="middle" fill="#404040" font-size="15" font-weight="600">Register</text>
+  </g>
+  <rect x="632" y="320" width="496" height="258" rx="12" fill="#f8fafc" stroke="#ececec"/>
+  
+      <rect class="hi h1" x="656" y="360" width="448" height="48" rx="8" fill="#eef5fb" stroke="#c7d7e8"/>
+      <g class="rise" style="animation-delay:0.2s">
+        <circle cx="682" cy="384" r="5" fill="#c4c4c4"/>
+        <text x="700" y="389" fill="#171717" font-size="15">Jordan Lee</text>
+        <text x="1084" y="389" text-anchor="end" fill="#525252" font-size="14" font-weight="650">Selected</text>
+      </g>
+      <rect class="hi h2" x="656" y="418" width="448" height="48" rx="8" fill="#eef5fb" stroke="#c7d7e8"/>
+      <g class="rise" style="animation-delay:0.32s">
+        <circle cx="682" cy="442" r="5" fill="#c4c4c4"/>
+        <text x="700" y="447" fill="#171717" font-size="15">Sam Rivera</text>
+        <text x="1084" y="447" text-anchor="end" fill="#525252" font-size="14" font-weight="650">Waitlisted</text>
+      </g>
+      <rect class="hi h3" x="656" y="476" width="448" height="48" rx="8" fill="#eef5fb" stroke="#c7d7e8"/>
+      <g class="rise" style="animation-delay:0.44s">
+        <circle cx="682" cy="500" r="5" fill="#c4c4c4"/>
+        <text x="700" y="505" fill="#171717" font-size="15">Avery Chen</text>
+        <text x="1084" y="505" text-anchor="end" fill="#525252" font-size="14" font-weight="650">Pending</text>
+      </g>
+  <rect x="40" y="634" width="1120" height="112" rx="16" fill="url(#hatch)" stroke="#ececec"/>
+  <rect x="64" y="654" width="92" height="72" rx="14" fill="#ffffff" stroke="#e5e5e5"/>
+  <text x="110" y="700" text-anchor="middle" fill="#171717" font-size="34" font-weight="700">1</text>
+  <text x="180" y="686" fill="#171717" font-size="20" font-weight="650">One campaign, one signup link</text>
+  <text x="180" y="714" fill="#737373" font-size="16">Clubs publish the campaign. Athletes and parents get their status in VOS.</text>
+
+</svg>
